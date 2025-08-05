@@ -15,50 +15,50 @@ const CollectionBox = () => {
     <>
       <div className="collection">
         <div className="collectionLeft">
-          <p className="col-p">Hot List</p>
+          <p className="col-p">Fresh Daily</p>
           <h3 className="col-h3">
-            <span>Women</span> Collection
+            <span>Wedding</span> Cakes
           </h3>
           <div className="col-link">
             <Link to="/shop" onClick={scrollToTop}>
-              <h5>Shop Now</h5>
+              <h5>Order Now</h5>
             </Link>
           </div>
         </div>
         <div className="collectionRight">
           <div className="collectionTop">
-            <p className="col-p">Hot List</p>
+            <p className="col-p">Most Popular</p>
             <h3 className="col-h3">
-              <span>Men</span> Collection
+              <span>Birthday</span> Cakes
             </h3>
             <div className="col-link">
               <Link to="/shop" onClick={scrollToTop}>
-                <h5>Shop Now</h5>
+                <h5>Order Now</h5>
               </Link>
             </div>
           </div>
           <div className="collectionBottom">
             <div className="box1">
-              <p className="col-p">Hot List</p>
+              <p className="col-p">Sweet Treats</p>
               <h3 className="col-h3">
-                <span>Kids</span> Collection
+                <span>Cupcakes</span> & Pastries
               </h3>
               <div className="col-link">
                 <Link to="/shop" onClick={scrollToTop}>
-                  <h5>Shop Now</h5>
+                  <h5>Order Now</h5>
                 </Link>
               </div>
             </div>
             <div className="box2">
               <h3 className="col-h3">
-                <span>E-gift</span> Cards
+                <span>Gift</span> Cards
               </h3>
               <p className="col-p">
-                Surprise someone with the gift they really want.
+                Surprise someone with the sweetest gift they'll love.
               </p>
               <div className="col-link">
                 <Link to="/shop" onClick={scrollToTop}>
-                  <h5>Shop Now</h5>
+                  <h5>Buy Now</h5>
                 </Link>
               </div>
             </div>

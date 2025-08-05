@@ -19,11 +19,12 @@ import BlogDetails from "./Components/Blog/BlogDetails/BlogDetails";
 import TermsConditions from "./Pages/TermsConditions";
 import ShoppingCart from "./Components/ShoppingCart/ShoppingCart";
 import Popup from "./Components/PopupBanner/Popup";
+import ErrorBoundary from "./Components/ErrorBoundary/ErrorBoundary";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
-    <>
+    <ErrorBoundary>
       <Popup />
       <ScrollToTop />
       <BrowserRouter>
@@ -43,9 +44,24 @@ const App = () => {
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
-        <Toaster />
+        <Toaster 
+          position="top-right"
+          toastOptions={{
+            duration: 4000,
+            style: {
+              background: '#363636',
+              color: '#fff',
+            },
+            success: {
+              duration: 3000,
+              theme: {
+                primary: '#4aed88',
+              },
+            },
+          }}
+        />
       </BrowserRouter>
-    </>
+    </ErrorBoundary>
   );
 };
 
