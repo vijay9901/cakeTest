@@ -1,7 +1,7 @@
 import React from 'react';
 import './Loading.css';
 
-const Loading = ({ message = "Loading delicious cakes..." }) => {
+const Loading = ({ message = "Loading CakeFest delights..." }) => {
   return (
     <div className="loading-container">
       <div className="loading-spinner">

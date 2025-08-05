@@ -25,8 +25,8 @@ const HeroSection = () => {
       <div className="heroMain">
         <div className="sectionleft">
           <p>Fresh Daily</p>
-          <h1>Sweet Dreams Bakery</h1>
-          <span>Premium Cakes & Desserts - Fresh Baked Daily with Love</span>
+          <h1>CakeFest</h1>
+          <span>Premium Cakes & Desserts - Where Every Bite is a Celebration!</span>
           <div className="heroLink">
             <Link to="/shop" onClick={scrollToTop}>
               <h5>Order Now</h5>

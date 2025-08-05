@@ -1,15 +1,17 @@
-# Sweet Dreams Bakery - React E-commerce Application
+# CakeFest - React E-commerce Application
 
-![sweet-dreams-bakery](https://socialify.git.ci/sweet-dreams-bakery/image?custom_language=React&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto)
+![cakefest](https://socialify.git.ci/cakefest/image?custom_language=React&forks=1&issues=1&language=1&name=1&owner=1&pattern=Solid&pulls=1&stargazers=1&theme=Auto)
 
 ## 📌 Live Demo
-https://sweet-dreams-bakery.netlify.app/
+https://cakefest.netlify.app/
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/fec4a869-298c-4e9c-8df6-cb6f132f7bd8/deploy-status)](https://app.netlify.com/sites/sweet-dreams-bakery/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fec4a869-298c-4e9c-8df6-cb6f132f7bd8/deploy-status)](https://app.netlify.com/sites/cakefest/deploys)
 
-## 🍰 About Sweet Dreams Bakery
+## 🍰 About CakeFest
 
-Sweet Dreams Bakery is a premium online cake and dessert e-commerce platform built with modern web technologies. We specialize in custom cakes, cupcakes, pastries, and desserts made fresh daily with the finest ingredients.
+CakeFest is Bangalore's premier online cake and dessert e-commerce platform built with modern web technologies. We specialize in custom cakes, cupcakes, pastries, and desserts made fresh daily with the finest ingredients, delivered right to your doorstep in Bangalore.
+
+**📍 Location:** Broke Field, Bangalore - 560085
 
 ## ✨ Features
 
@@ -21,15 +23,16 @@ Sweet Dreams Bakery is a premium online cake and dessert e-commerce platform bui
 - **Custom Cake Orders** - Personalized cake ordering with custom messages and designs
 - **Production Ready** - Error boundaries, loading states, and optimized performance
 - **SEO Optimized** - Full meta tags and social media integration
+- **Global CSS Variables** - Centralized theme control for easy customization
 
 ## 🎂 Cake Categories
 
-- **Birthday Cakes** - Custom birthday celebrations
-- **Wedding Cakes** - Elegant multi-tier wedding cakes
-- **Chocolate Cakes** - Rich chocolate desserts
-- **Cheesecakes** - Creamy and delicious varieties
-- **Cupcakes** - Individual treats and gift boxes
-- **Special Occasion** - Holiday and themed cakes
+- **Birthday Cakes** - Custom birthday celebrations with photo prints
+- **Wedding Cakes** - Elegant multi-tier wedding cakes (serves 40-50 people)
+- **Chocolate Cakes** - Rich chocolate desserts and Black Forest varieties
+- **Cheesecakes** - Creamy New York style with fresh toppings
+- **Cupcakes** - Individual treats and gift boxes (12-24 pieces)
+- **Special Occasion** - Red Velvet, Carrot, Tiramisu, and themed cakes
 - **Macarons & Tarts** - French pastries and fruit tarts
 
 ## 🚀 Technologies Used
@@ -40,6 +43,7 @@ Sweet Dreams Bakery is a premium online cake and dessert e-commerce platform bui
 - **Material-UI** - Professional UI components
 - **Three.js & React Three Fiber** - 3D cake model interaction
 - **React Hot Toast** - Beautiful notifications
+- **Global CSS Variables** - Centralized theme management
 - **Responsive Design** - Mobile-first approach
 - **Error Boundaries** - Production-ready error handling
 - **Environment Configuration** - Configurable for different deployments
@@ -64,24 +68,22 @@ Sweet Dreams Bakery is a premium online cake and dessert e-commerce platform bui
     ├── App.css
     ├── index.js
     ├── index.css
+    ├── styles/
+    │   └── globals.css      # Global CSS variables
     ├── App/
     │   └── store.js         # Redux store
-    ├── Assets/
-    │   ├── Products/        # Cake product images
-    │   ├── Collection/      # Category images
-    │   ├── Banner/          # Marketing banners
-    │   └── ...
+    ├── Assets/              # Static assets
     ├── Components/
     │   ├── ErrorBoundary/   # Production error handling
     │   ├── Loading/         # Loading states
-    │   ├── Header/          # Navigation (updated for bakery)
+    │   ├── Header/          # Navigation (updated for CakeFest)
     │   ├── Footer/
     │   ├── Home/            # Homepage sections
     │   ├── ShoppingCart/
     │   ├── Model/           # 3D cake model
     │   └── ...
     ├── Data/
-    │   └── StoreData.js     # Cake products data
+    │   └── StoreData.js     # Cake products data with Unsplash images
     ├── Features/            # Redux slices
     └── Pages/               # Route components
 ```
@@ -98,10 +100,10 @@ Sweet Dreams Bakery is a premium online cake and dessert e-commerce platform bui
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/sweet-dreams-bakery.git
+git clone https://github.com/your-username/cakefest.git
 
 # Navigate to project directory
-cd sweet-dreams-bakery
+cd cakefest
 
 # Install dependencies
 npm install
@@ -131,12 +133,18 @@ serve -s build
 
 ### Error Handling
 - **Error Boundaries** - Graceful error recovery
-- **Loading States** - Professional loading indicators
+- **Loading States** - Professional loading indicators  
 - **Toast Notifications** - User-friendly feedback
+
+### Global CSS Theme System
+- **CSS Variables** - Centralized color and theme control
+- **Responsive Typography** - Adaptive font sizes
+- **Utility Classes** - Pre-built styling components
+- **Dark Mode Ready** - Theme switching capability
 
 ### Performance
 - **Code Splitting** - Optimized bundle sizes
-- **Image Optimization** - Fast loading product images
+- **Image Optimization** - Fast loading cake images from Unsplash
 - **Responsive Images** - Adaptive image delivery
 
 ### SEO & Analytics
@@ -144,66 +152,73 @@ serve -s build
 - **Structured Data** - Search engine optimization
 - **Analytics Ready** - Google Analytics integration
 
-### Accessibility
-- **ARIA Labels** - Screen reader support
-- **Keyboard Navigation** - Full keyboard accessibility
-- **Color Contrast** - WCAG compliant design
-
 ## 🔧 Configuration
 
 ### Environment Variables
 ```env
-REACT_APP_NAME=Sweet Dreams Bakery
-REACT_APP_API_URL=your-api-url
-REACT_APP_PHONE=your-phone
-REACT_APP_EMAIL=your-email
+REACT_APP_NAME=CakeFest
+REACT_APP_API_URL=https://api.cakefest.com
+REACT_APP_PHONE=+91-9876-543-210
+REACT_APP_EMAIL=orders@cakefest.com
+REACT_APP_ADDRESS=Broke Field, Bangalore - 560085
 # See .env file for complete configuration
 ```
 
-### Features Toggle
-Enable/disable features through environment variables:
-- 3D Model interaction
-- Product reviews
-- Wishlist functionality
-- Push notifications
+### Global CSS Variables
+Control the entire theme from `src/styles/globals.css`:
+```css
+:root {
+  --primary-color: #ff6b6b;
+  --secondary-color: #ffa726;
+  --accent-color: #8bc34a;
+  /* And many more... */
+}
+```
+
+## 🎨 Customization
+
+### Theme Colors
+Update colors globally in `src/styles/globals.css`:
+- Primary colors for buttons and accents
+- Background and text colors
+- Border and shadow colors
+- Success/error states
+
+### Products
+- Modify `src/Data/StoreData.js` for your cake inventory
+- High-quality cake images from Unsplash
+- Indian pricing (₹699 - ₹8999)
+- Detailed product information with allergens
+
+### Branding
+- All text updated to CakeFest
+- Bangalore location integrated
+- Indian phone number format
+- Local business hours
 
 ## 📱 Mobile Optimization
 
 - **Progressive Web App** ready
-- **Touch-friendly** interfaces
+- **Touch-friendly** interfaces for mobile users
 - **Swipe gestures** for product galleries
 - **Mobile-first** responsive design
 
-## 🛡️ Security Features
+## 🏪 Business Information
 
-- **Input validation** on all forms
-- **XSS protection** for user content
-- **HTTPS ready** for secure transactions
-- **Environment variables** for sensitive data
+- **Name:** CakeFest
+- **Location:** Broke Field, Bangalore - 560085
+- **Phone:** +91-9876-543-210
+- **Email:** orders@cakefest.com
+- **Hours:** Mon-Sat: 7AM-8PM, Sun: 8AM-6PM
 
-## 📈 Analytics & Monitoring
+## 📦 Cake Details
 
-- Google Analytics integration
-- Error tracking and reporting
-- Performance monitoring
-- User behavior analytics
-
-## 🎨 Customization
-
-### Branding
-- Update colors in CSS variables
-- Replace logo and favicon
-- Customize fonts and typography
-
-### Products
-- Modify `src/Data/StoreData.js` for your cake inventory
-- Update product categories and pricing
-- Add seasonal or special collections
-
-### Content
-- Update homepage sections in `src/Components/Home/`
-- Customize about page content
-- Modify contact information and business hours
+All cakes include:
+- **Weight** specifications (800g - 5kg)
+- **Serving** information (6-50 people)
+- **Allergen** warnings (eggs, dairy, nuts, etc.)
+- **Custom options** for special requests
+- **Fresh daily** preparation guarantee
 
 ## 🤝 Contributing
 
@@ -220,21 +235,22 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 📞 Support
 
 For support and inquiries:
-- 📧 Email: support@sweet-dreams-bakery.com
-- 📱 Phone: +1-555-CAKE-123
-- 🌐 Website: https://sweet-dreams-bakery.netlify.app
+- 📧 Email: support@cakefest.com
+- 📱 Phone: +91-9876-543-210
+- 🌐 Website: https://cakefest.netlify.app
+- 📍 Visit us: Broke Field, Bangalore - 560085
 
 ---
 
 ## 🌟 Star History
 
-<a href="https://www.star-history.com/#your-username/sweet-dreams-bakery&Timeline">
+<a href="https://www.star-history.com/#your-username/cakefest&Timeline">
  <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=your-username/sweet-dreams-bakery&type=Timeline&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=your-username/sweet-dreams-bakery&type=Timeline" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=your-username/sweet-dreams-bakery&type=Timeline" />
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=your-username/cakefest&type=Timeline&theme=dark" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=your-username/cakefest&type=Timeline" />
+   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=your-username/cakefest&type=Timeline" />
  </picture>
 </a>
 
-🧁 **Sweet Dreams, Sweet Code!** 🧁
+🎂 **CakeFest - Where Every Bite is a Celebration!** 🎂
 ---

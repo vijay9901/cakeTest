@@ -1,9 +1,9 @@
 {
-  "name": "sweet-dreams-bakery",
+  "name": "cakefest",
   "version": "1.0.0",
   "private": true,
-  "description": "Sweet Dreams Bakery - Premium cake and dessert e-commerce application",
-  "homepage": "https://sweet-dreams-bakery.netlify.app",
+  "description": "CakeFest - Premium cake and dessert e-commerce application",
+  "homepage": "https://cakefest.netlify.app",
   "dependencies": {
     "@emotion/react": "^11.11.3",
     "@emotion/styled": "^11.11.0",

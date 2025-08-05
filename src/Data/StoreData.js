@@ -1,151 +1,194 @@
-import Product_1 from "../Assets/Products/product_1.jpg";
-import Product_1_1 from "../Assets/Products/product_1-1.jpg";
-import Product_2 from "../Assets/Products/product_2.jpg";
-import Product_2_1 from "../Assets/Products/product_2-1.jpg";
-import Product_3 from "../Assets/Products/product_3.jpg";
-import Product_3_1 from "../Assets/Products/product_3-1.jpg";
-import Product_4 from "../Assets/Products/product_4.jpg";
-import Product_4_1 from "../Assets/Products/product_4-1.jpg";
-import Product_5 from "../Assets/Products/product_5.jpg";
-import Product_5_1 from "../Assets/Products/product_5-1.jpg";
-import Product_6 from "../Assets/Products/product_6.jpg";
-import Product_6_1 from "../Assets/Products/product_6-1.jpg";
-import Product_7 from "../Assets/Products/product_7.jpg";
-import Product_7_1 from "../Assets/Products/product_7-1.jpg";
-import Product_8 from "../Assets/Products/product_8.jpg";
-import Product_8_1 from "../Assets/Products/product_8-1.jpg";
-
-import limited1 from "../Assets/LimitedEdition/limited-1.jpg";
-import limited2 from "../Assets/LimitedEdition/limited-2.jpg";
-import limited3 from "../Assets/LimitedEdition/limited-3.jpg";
-import limited4 from "../Assets/LimitedEdition/limited-4.jpg";
-import limited5 from "../Assets/LimitedEdition/limited-5.jpg";
+// Using placeholder cake images from reliable sources
+const cakeImages = {
+  chocolate_fudge_1: "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&q=80",
+  chocolate_fudge_2: "https://images.unsplash.com/photo-1607958996333-41aef7caefaa?w=500&q=80",
+  strawberry_cheesecake_1: "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=500&q=80",
+  strawberry_cheesecake_2: "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?w=500&q=80",
+  red_velvet_1: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=500&q=80",
+  red_velvet_2: "https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=500&q=80",
+  vanilla_birthday_1: "https://images.unsplash.com/photo-1464349095431-e9a21285b5f3?w=500&q=80",
+  vanilla_birthday_2: "https://images.unsplash.com/photo-1607478900766-efe13248b125?w=500&q=80",
+  lemon_drizzle_1: "https://images.unsplash.com/photo-1519869325930-281384150729?w=500&q=80",
+  lemon_drizzle_2: "https://images.unsplash.com/photo-1571115764595-644a1f56a55c?w=500&q=80",
+  black_forest_1: "https://images.unsplash.com/photo-1551024506-0bccd828d307?w=500&q=80",
+  black_forest_2: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500&q=80",
+  carrot_cake_1: "https://images.unsplash.com/photo-1609501676725-7186f295a4c8?w=500&q=80",
+  carrot_cake_2: "https://images.unsplash.com/photo-1605350405669-70d22952c5ae?w=500&q=80",
+  tiramisu_1: "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=500&q=80",
+  tiramisu_2: "https://images.unsplash.com/photo-1481391319762-47dff72954d9?w=500&q=80",
+  wedding_cake_1: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?w=500&q=80",
+  cupcakes_1: "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=500&q=80",
+  fruit_tarts_1: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=500&q=80",
+  macarons_1: "https://images.unsplash.com/photo-1569864358642-9d1684040f43?w=500&q=80",
+  custom_birthday_1: "https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=500&q=80"
+};
 
 let StoreData = [
   {
     productID: 1,
-    frontImg: Product_1,
-    backImg: Product_1_1,
-    productName: "Chocolate Fudge Cake",
-    productPrice: 45,
+    frontImg: cakeImages.chocolate_fudge_1,
+    backImg: cakeImages.chocolate_fudge_2,
+    productName: "Rich Chocolate Fudge Cake",
+    productPrice: 899,
     productReviews: "8k+ reviews",
     category: "chocolate",
-    description: "Rich, decadent chocolate cake with layers of fudge frosting"
+    description: "Decadent triple-layer chocolate cake with rich fudge frosting and chocolate ganache drip. Perfect for chocolate lovers!",
+    weight: "1 kg",
+    serves: "8-10 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 2,
-    frontImg: Product_2,
-    backImg: Product_2_1,
-    productName: "Strawberry Cheesecake",
-    productPrice: 38,
+    frontImg: cakeImages.strawberry_cheesecake_1,
+    backImg: cakeImages.strawberry_cheesecake_2,
+    productName: "Fresh Strawberry Cheesecake",
+    productPrice: 1299,
     productReviews: "2k+ reviews",
     category: "cheesecake",
-    description: "Creamy cheesecake topped with fresh strawberries"
+    description: "Creamy New York style cheesecake topped with fresh strawberries and strawberry compote on graham cracker crust.",
+    weight: "1.2 kg",
+    serves: "10-12 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 3,
-    frontImg: Product_3,
-    backImg: Product_3_1,
-    productName: "Red Velvet Layer Cake",
-    productPrice: 42,
+    frontImg: cakeImages.red_velvet_1,
+    backImg: cakeImages.red_velvet_2,
+    productName: "Classic Red Velvet Layer Cake",
+    productPrice: 1199,
     productReviews: "7k+ reviews",
     category: "special",
-    description: "Classic red velvet cake with cream cheese frosting"
+    description: "Moist red velvet sponge layers with smooth cream cheese frosting, finished with red velvet crumbs.",
+    weight: "1 kg",
+    serves: "8-10 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 4,
-    frontImg: Product_4,
-    backImg: Product_4_1,
-    productName: "Vanilla Birthday Cake",
-    productPrice: 35,
+    frontImg: cakeImages.vanilla_birthday_1,
+    backImg: cakeImages.vanilla_birthday_2,
+    productName: "Vanilla Bean Birthday Cake",
+    productPrice: 799,
     productReviews: "5k+ reviews",
     category: "birthday",
-    description: "Light and fluffy vanilla cake perfect for celebrations"
+    description: "Light and fluffy vanilla bean cake with buttercream frosting. Can be customized with your special message!",
+    weight: "1 kg",
+    serves: "8-10 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 5,
-    frontImg: Product_5,
-    backImg: Product_5_1,
-    productName: "Lemon Drizzle Cake",
-    productPrice: 32,
+    frontImg: cakeImages.lemon_drizzle_1,
+    backImg: cakeImages.lemon_drizzle_2,
+    productName: "Zesty Lemon Drizzle Cake",
+    productPrice: 699,
     productReviews: "9k+ reviews",
     category: "citrus",
-    description: "Moist lemon cake with tangy lemon glaze"
+    description: "Moist lemon sponge cake soaked in lemon syrup and topped with tangy lemon glaze. Refreshingly delicious!",
+    weight: "800g",
+    serves: "6-8 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 6,
-    frontImg: Product_6,
-    backImg: Product_6_1,
-    productName: "Black Forest Cake",
-    productPrice: 48,
+    frontImg: cakeImages.black_forest_1,
+    backImg: cakeImages.black_forest_2,
+    productName: "Traditional Black Forest Cake",
+    productPrice: 1399,
     productReviews: "1k+ reviews",
     category: "chocolate",
-    description: "Chocolate sponge with cherries and whipped cream"
+    description: "Authentic German Black Forest cake with chocolate sponge, fresh cherries, cherry brandy, and whipped cream.",
+    weight: "1.2 kg",
+    serves: "10-12 people",
+    allergens: ["eggs", "dairy", "gluten", "alcohol"]
   },
   {
     productID: 7,
-    frontImg: Product_7,
-    backImg: Product_7_1,
-    productName: "Carrot Cake",
-    productPrice: 40,
+    frontImg: cakeImages.carrot_cake_1,
+    backImg: cakeImages.carrot_cake_2,
+    productName: "Spiced Carrot Walnut Cake",
+    productPrice: 999,
     productReviews: "3k+ reviews",
     category: "special",
-    description: "Spiced carrot cake with cream cheese frosting and walnuts"
+    description: "Moist carrot cake with warm spices, crunchy walnuts, and smooth cream cheese frosting. A classic favorite!",
+    weight: "1 kg",
+    serves: "8-10 people",
+    allergens: ["eggs", "dairy", "gluten", "nuts"]
   },
   {
     productID: 8,
-    frontImg: Product_8,
-    backImg: Product_8_1,
-    productName: "Tiramisu Cake",
-    productPrice: 50,
+    frontImg: cakeImages.tiramisu_1,
+    backImg: cakeImages.tiramisu_2,
+    productName: "Authentic Tiramisu Cake",
+    productPrice: 1599,
     productReviews: "4k+ reviews",
     category: "special",
-    description: "Coffee-flavored Italian dessert cake with mascarpone"
+    description: "Italian coffee-flavored dessert cake with mascarpone, ladyfingers, coffee, and a dusting of cocoa powder.",
+    weight: "1 kg",
+    serves: "8-10 people",
+    allergens: ["eggs", "dairy", "gluten", "caffeine"]
   },
   {
     productID: 9,
-    frontImg: limited1,
-    productName: "Wedding Cake - 3 Tier",
-    productPrice: 180,
+    frontImg: cakeImages.wedding_cake_1,
+    productName: "Elegant 3-Tier Wedding Cake",
+    productPrice: 8999,
     productReviews: "8k+ reviews",
     category: "wedding",
-    description: "Elegant 3-tier wedding cake with custom decorations"
+    description: "Stunning 3-tier wedding cake with elegant decorations. Choose your flavors and custom design elements.",
+    weight: "5 kg",
+    serves: "40-50 people",
+    allergens: ["eggs", "dairy", "gluten"],
+    customizable: true
   },
   {
     productID: 10,
-    frontImg: limited2,
-    productName: "Chocolate Cupcake Box",
-    productPrice: 25,
+    frontImg: cakeImages.cupcakes_1,
+    productName: "Assorted Cupcake Box (12 pcs)",
+    productPrice: 899,
     productReviews: "5k+ reviews",
     category: "cupcakes",
-    description: "Box of 12 assorted chocolate cupcakes"
+    description: "Box of 12 assorted gourmet cupcakes in flavors: chocolate, vanilla, red velvet, and lemon.",
+    weight: "1.2 kg",
+    serves: "12 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 11,
-    frontImg: limited3,
-    productName: "Fruit Tart Collection",
-    productPrice: 35,
+    frontImg: cakeImages.fruit_tarts_1,
+    productName: "Mixed Fruit Tart Collection (6 pcs)",
+    productPrice: 1199,
     productReviews: "1k+ reviews",
     category: "tarts",
-    description: "Assorted fresh fruit tarts with pastry cream"
+    description: "Assorted fresh fruit tarts with pastry cream and seasonal fruits. Light and refreshing dessert option.",
+    weight: "800g",
+    serves: "6 people",
+    allergens: ["eggs", "dairy", "gluten"]
   },
   {
     productID: 12,
-    frontImg: limited4,
-    productName: "Macaron Gift Box",
-    productPrice: 28,
+    frontImg: cakeImages.macarons_1,
+    productName: "French Macaron Gift Box (24 pcs)",
+    productPrice: 1599,
     productReviews: "7k+ reviews",
     category: "macarons",
-    description: "Colorful French macarons in elegant gift box"
+    description: "Elegant box of 24 French macarons in assorted flavors: vanilla, chocolate, strawberry, pistachio, and more.",
+    weight: "600g",
+    serves: "12-24 people",
+    allergens: ["eggs", "dairy", "nuts"]
   },
   {
     productID: 13,
-    frontImg: limited5,
-    productName: "Custom Birthday Cake",
-    productPrice: 55,
+    frontImg: cakeImages.custom_birthday_1,
+    productName: "Custom Photo Birthday Cake",
+    productPrice: 1599,
     productReviews: "71+ reviews",
     category: "birthday",
-    description: "Personalized birthday cake with custom message"
+    description: "Personalized birthday cake with edible photo print and custom message. Choose your favorite flavor!",
+    weight: "1 kg",
+    serves: "8-10 people",
+    allergens: ["eggs", "dairy", "gluten"],
+    customizable: true
   },
 ];
 
