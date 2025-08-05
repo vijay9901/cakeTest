@@ -56,17 +56,17 @@ const Navbar = () => {
               </li>
               <li>
                 <Link to="/shop" onClick={scrollToTop}>
-                  SHOP
+                  CAKES
                 </Link>
               </li>
               <li>
                 <Link to="/blog" onClick={scrollToTop}>
-                  BLOG
+                  RECIPES
                 </Link>
               </li>
               <li>
                 <Link to="/about" onClick={scrollToTop}>
-                  ABOUT
+                  ABOUT US
                 </Link>
               </li>
               <li>

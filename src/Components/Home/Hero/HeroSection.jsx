@@ -24,12 +24,12 @@ const HeroSection = () => {
     <>
       <div className="heroMain">
         <div className="sectionleft">
-          <p>New Trend</p>
-          <h1>Summer Sale Stylish</h1>
-          <span>Limited Time Offer - Up to 60% off & Free Shipping</span>
+          <p>Fresh Daily</p>
+          <h1>Sweet Dreams Bakery</h1>
+          <span>Premium Cakes & Desserts - Fresh Baked Daily with Love</span>
           <div className="heroLink">
             <Link to="/shop" onClick={scrollToTop}>
-              <h5>Discover More</h5>
+              <h5>Order Now</h5>
             </Link>
           </div>
         </div>
@@ -58,20 +58,24 @@ const HeroSection = () => {
           </Canvas>
           <div className="heroColorBtn">
             <button
-              onClick={() => changeColor("#353933")}
-              style={{ backgroundColor: "#353933" }}
+              onClick={() => changeColor("#8B4513")}
+              style={{ backgroundColor: "#8B4513" }}
+              title="Chocolate"
             ></button>
             <button
-              onClick={() => changeColor("#EFBD4E")}
-              style={{ backgroundColor: "#EFBD4E" }}
+              onClick={() => changeColor("#FFB6C1")}
+              style={{ backgroundColor: "#FFB6C1" }}
+              title="Strawberry"
             ></button>
             <button
-              onClick={() => changeColor("#726DE7")}
-              style={{ backgroundColor: "#726DE7" }}
+              onClick={() => changeColor("#FFFACD")}
+              style={{ backgroundColor: "#FFFACD" }}
+              title="Vanilla"
             ></button>
             <button
-              onClick={() => changeColor("red")}
-              style={{ backgroundColor: "red" }}
+              onClick={() => changeColor("#DC143C")}
+              style={{ backgroundColor: "#DC143C" }}
+              title="Red Velvet"
             ></button>
           </div>
         </div>
